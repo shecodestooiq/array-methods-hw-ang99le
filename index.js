@@ -2,11 +2,15 @@ function processAges(ages) {
   //!your solution should be inside the function.
   //1-Use a for loop to iterate over the ages array and double each age. Store the doubled ages in a new array called doubledAges and Print the doubledAges array to the console.
   doubledAges=[];
-  for (let i = 0;i <ages.length;i++){
-   doubledAges.push(ages[i]*2)}
-   console.log(doubledAges);
+  let text=""
+  for (let arr of ages){
+    text += arr;
+   doubledAges.push(arr*2)
+  }
+  console.log(doubledAges);
   //2-Use the forEach method to loop through the ages array and print each age to the console.
   ages.forEach(function(arr){console.log(`${arr}`);});
+
   //3-Use the filter method to create a new array called adults that contains only ages greater than or equal to 18.
   const adults=ages.filter(function(Adults){return Adults>=18})
   console.log(adults)
