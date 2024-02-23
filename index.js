@@ -10,13 +10,15 @@ function processAges(ages) {
   ages.forEach(function(arr){console.log(`${arr}`);});
 
   //3-Use the filter method to create a new array called adults that contains only ages greater than or equal to 18.
-  const adults=ages.filter(function(adults)
-  {return adults>=18})
+  const adults=ages.filter(function(adults){
+    return adults>=18;
+  })
   console.log(adults)
 
   //4-Use the map method to create a new array called ageStrings that contains string representations of each age in the ages array.
-  const ageStrings=ages.map(function(ageStrings)
-  {return ageStrings.toString()}) 
+  const ageStrings=ages.map(function(ageStrings){
+   return ageStrings.toString();
+  }) 
   console.log(ageStrings);
   //5-please make sure to name your arrays(variables) accordingly to the names in the return statement.
    
